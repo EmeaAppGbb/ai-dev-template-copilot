@@ -1,27 +1,29 @@
 # Guided example for the Idea Coach
 
-## User
+<details>
 
+<summary><b>
+User:</b> 
 I have an idea about building and end to end development workflow using AI and I need help brainstorming the flow
+</summary>
 
-## Agent
-
-That sounds like a fantastic initiative, Kosta! Building an end-to-end AI-powered development workflow could really streamline processes and boost productivity—especially in complex environments like AKS, storage, and scaling, which you’ve been exploring.
+### Agent
+That sounds like a fantastic initiative! Building an end-to-end AI-powered development workflow could really streamline processes and boost productivity—especially in complex environments like AKS, storage, and scaling, which you’ve been exploring.
 
 To get us started, I’d love to understand a bit more so we can brainstorm effectively. Here’s my first question:
 
 **What kind of development workflow are you envisioning—are we talking about application development, infrastructure-as-code, data pipelines, or something else?**
 
 Once I know that, I can help map out the stages and suggest where AI can add the most value.
+</details>
 
-## User
+<details>
 
-I want to create a workflow for quick bootstraping of projects using AI and following BDD practices.
+<summary><b>User:</b> I want to create a workflow for quick bootstraping of projects using AI and following BDD practices.
 This is what I think first, a high level Product Requirements Document is produced, which keeps the high level requirements and is continuously improved and features added to it. Then, that's being split to a Feature Requirements Document, which go more in depth for a specific feature.Then, those features are converted to Gherkin features, which cover the features in depth and are used to then generate tests and verify that the implementation is satisfying the tests. Once the Gherkin features are generated, tests are generated to make sure the features are implemented.After that, the actual implementation in code is generated and a loop takes place where the tests are verifying the code and give feedback for implementation and where the code needs to change/improve. At the end, after all tests are passing and the implementation looks correct, documentation is being produced for the feature.
-Let's see if we can spot gaps and problems with the described flow and propose iterative solutions for said gaps.
+Let's see if we can spot gaps and problems with the described flow and propose iterative solutions for said gaps.</summary>
 
-## Agent
-
+### Agent
 Thanks for laying that out so clearly! You're already thinking in a very structured and forward-looking way. Your proposed AI-driven BDD workflow is solid and aligns well with modern DevOps and agile practices. Let’s break it down and identify potential **gaps**, **risks**, and **opportunities for iteration** at each stage:
 
 ---
@@ -55,13 +57,17 @@ Thanks for laying that out so clearly! You're already thinking in a very structu
 Would you like me to help you **visualize this as a diagram or flowchart**, or maybe **draft a sample AI prompt** for one of the stages (like converting FRD to Gherkin)?
 
 Also, do you plan to integrate this into a specific toolchain (e.g., GitHub Copilot, Azure DevOps, etc.)? That could help tailor the workflow even more.
+</details>
 
-## User
 
+<details>
+
+<summary><b>
+User:</b> 
 Imagine you have a persona (agent) that can is specialized and responsible for a single stage in the flow, how would you model that? Please add it as a column in this existing table, I find the table super helpful
+</summary>
 
-## Agent
-
+### Agent
 Absolutely! Modeling each stage as a specialized **AI persona (agent)** is a brilliant way to modularize the workflow and ensure clarity, accountability, and scalability. Here's the updated table with a new column for **AI Agent Persona**—each one tailored to its stage with a clear role and responsibility:
 
 ---
@@ -83,15 +89,16 @@ Absolutely! Modeling each stage as a specialized **AI persona (agent)** is a bri
 Would you like to explore how these agents could **collaborate or hand off tasks** to each other in a pipeline? Or maybe we could prototype one of these agents in more detail—like what inputs/outputs it would handle and what prompts it would use?
 
 Also, how did this table work for you? Feel free to use the 👍 or 👎 to let me know how helpful it was!
+</details>
 
+<details>
+<summary><b>
+User:</b> 
+ This looks great! Can we now go deeper into their personalities and traits? Can you add another column that gives a grounding and system prompt for the agent and it's personality?
+</summary>
 
-## User
-
-This looks great! Can we now go deeper into their personalities and traits? Can you add another column that gives a grounding and system prompt for the agent and it's personality?
-
-## Agent
-
-Absolutely, Kosta! Giving each agent a distinct **personality and grounding prompt** will make them more effective, especially if you're thinking about implementing this as a modular AI system or even simulating them in a multi-agent environment.
+### Agent
+ Absolutely! Giving each agent a distinct **personality and grounding prompt** will make them more effective, especially if you're thinking about implementing this as a modular AI system or even simulating them in a multi-agent environment.
 
 Here’s the updated table with a new column: **Agent Personality & System Prompt**. This includes a short description of their tone, behavior, and a sample system prompt that could be used to instantiate them in an AI environment.
 
@@ -114,14 +121,15 @@ Here’s the updated table with a new column: **Agent Personality & System Promp
 Would you like to simulate a conversation between a few of these agents to see how they might collaborate? Or maybe you'd like to prototype one of them in more detail (e.g., the Behavior Agent generating Gherkin from a feature spec)?
 
 Let me know how you'd like to build on this—and feel free to give this a 👍 or 👎 to help me improve!
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Yes, I'd like us to prototype all of them in action, one by one.
+</summary>
 
-## User
-
-Yes, I'd like us to prototype all of them in action, one by one.
-
-## Agent
-
-Awesome! Let’s bring these agents to life—one by one—starting with the **Visionary Agent**, who kicks off the workflow by crafting the **Product Requirements Document (PRD)**.
+### Agent
+ Awesome! Let’s bring these agents to life—one by one—starting with the **Visionary Agent**, who kicks off the workflow by crafting the **Product Requirements Document (PRD)**.
 
 ---
 
@@ -141,17 +149,16 @@ For example:
 - “An AI assistant that generates infrastructure-as-code from natural language.”
 
 Once I have that, I’ll show you how the Visionary Agent would respond with a first draft of the PRD and ask clarifying questions. Ready when you are!
-
-
-
-## User
-
-Smart Ai Agent that helps with elderly care. It tracks vitals and alerts when something is off or needs to be acted on.
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Smart Ai Agent that helps with elderly care. It tracks vitals and alerts when something is off or needs to be acted on.
 It's implemented as a web app that uses speech to text to receive input as well as text to speech to talk to the users.
+</summary>
 
-## Agent
-
-Perfect! Here's how the **Visionary Agent** would respond to your idea about a **Smart AI Agent for Elderly Care**:
+### Agent
+ Perfect! Here's how the **Visionary Agent** would respond to your idea about a **Smart AI Agent for Elderly Care**:
 
 ---
 
@@ -201,18 +208,20 @@ ElderCare AI Companion is a smart, voice-interactive web application designed to
 Once we refine this PRD with your answers, we’ll pass it to the **Architect Agent** to break it down into detailed feature specs.
 
 Would you like to answer the clarifying questions now, or should we move on to the next agent and simulate how they’d handle the current draft?
-
-## User
-
+</details>
+<details>
+<summary><b>
+User:</b> 
 1. Heart reate, blood pressure, glucose, activity, sleep
 2. Both
 3. Family and caregivers
 4. Yes
 5. Yes
 
-## Agent
+</summary>
 
-Perfect, Kosta! With your clarifications, the **Visionary Agent** now finalizes the PRD and hands it off to the **Architect Agent**. Here's the final version of the PRD with your answers integrated:
+### Agent
+ Perfect! With your clarifications, the **Visionary Agent** now finalizes the PRD and hands it off to the **Architect Agent**. Here's the final version of the PRD with your answers integrated:
 
 ---
 
@@ -283,14 +292,15 @@ Let’s activate the **Architect Agent** now. Here's how they would begin:
 Would you like the Architect Agent to continue breaking down the rest of the features (e.g., Voice Interface, Alerting, Dashboard), or do you want to dive into one of them in more detail first?
 
 Let’s keep building!
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Yes
+</summary>
 
-## User
-
-Yes
-
-## Agent
-
-Awesome! Let’s continue with the **Architect Agent** breaking down the next core features from the PRD. Here's how they would approach it:
+### Agent
+ Awesome! Let’s continue with the **Architect Agent** breaking down the next core features from the PRD. Here's how they would approach it:
 
 ---
 
@@ -386,14 +396,15 @@ Awesome! Let’s continue with the **Architect Agent** breaking down the next co
 Would you like to move on to the **Behavior Agent** next, where we convert one of these features into Gherkin scenarios? Or do you want to tweak or expand any of the FRDs first?
 
 Let’s keep the momentum going!
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Yes, lets move on
+</summary>
 
-## User
-
-Yes, lets move on
-
-## Agent
-
-Fantastic, Kosta! Now let’s activate the **Behavior Agent**, who takes the detailed FRDs and converts them into **Gherkin feature files**—the backbone of your BDD workflow.
+### Agent
+ Fantastic! Now let’s activate the **Behavior Agent**, who takes the detailed FRDs and converts them into **Gherkin feature files**—the backbone of your BDD workflow.
 
 ---
 
@@ -445,15 +456,15 @@ Feature: Vitals Monitoring Engine
 Would you like the Behavior Agent to continue with another feature (e.g., Voice Interface or Alerting System), or would you like to move on to the **Guardian Agent** to generate tests from this Gherkin?
 
 Let’s keep building this AI-powered pipeline!
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Yes, lets move on
+</summary>
 
-
-## User
-
-Yes, lets move on
-
-## Agent
-
-Awesome, Kosta! Now let’s activate the **Guardian Agent**, who takes the Gherkin scenarios from the Behavior Agent and turns them into **automated tests**—ensuring quality and coverage.
+### Agent
+ Awesome! Now let’s activate the **Guardian Agent**, who takes the Gherkin scenarios from the Behavior Agent and turns them into **automated tests**—ensuring quality and coverage.
 
 ---
 
@@ -530,14 +541,15 @@ def test_device_disconnection_triggers_alert():
 Would you like to move on to the **Builder Agent** next, who will generate the actual implementation code based on these tests? Or would you like to expand the test suite further?
 
 Let’s keep the flow going!
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Yes, let's move on
+</summary>
 
-## User
-
-Yes, let's move on
-
-## Agent
-
-Great! Now let’s activate the **Builder Agent**, who takes the tests from the Guardian Agent and writes the **actual implementation code** to satisfy them.
+### Agent
+ Great! Now let’s activate the **Builder Agent**, who takes the tests from the Guardian Agent and writes the **actual implementation code** to satisfy them.
 
 ---
 
@@ -607,14 +619,15 @@ class VitalsMonitor:
 Would you like to move on to the **Refiner Agent**, who will run the tests, analyze failures, and iterate on the code? Or would you like to expand this implementation first (e.g., add voice input parsing or dashboard integration)?
 
 Let’s keep building this AI-powered pipeline!
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Yes
+</summary>
 
-## User
-
-Yes
-
-## Agent
-
-Awesome, Kosta! Now let’s activate the **Refiner Agent**, who ensures that the implementation is solid by running the tests, analyzing failures, and suggesting improvements.
+### Agent
+ Awesome! Now let’s activate the **Refiner Agent**, who ensures that the implementation is solid by running the tests, analyzing failures, and suggesting improvements.
 
 ---
 
@@ -675,14 +688,15 @@ def parse_voice_input(voice_input):
 - If all tests pass, we can move on to the **Scribe Agent** to generate documentation.
 
 Would you like to proceed with the Scribe Agent now, or simulate the re-run of the tests first to confirm everything is green?
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Simulate re-run
+</summary>
 
-## User
-
-Simulate re-run
-
-## Agent
-
-Great! Let’s simulate the **Refiner Agent** re-running the test suite after the voice input parser was added.
+### Agent
+ Great! Let’s simulate the **Refiner Agent** re-running the test suite after the voice input parser was added.
 
 ---
 
@@ -707,16 +721,15 @@ The implementation is functionally complete for the **Vitals Monitoring Engine**
 Would you like to move on to the **Scribe Agent** to generate documentation for this feature? Or would you prefer to repeat the full cycle for another feature like the **Voice Interface** or **Alerting System**?
 
 Let’s keep the momentum going!
+</details>
+<details>
+<summary><b>
+User:</b> 
+ Let's move on
+</summary>
 
-## 
-
-## User
-
-Let's move on
-
-## Agent
-
-Awesome, Kosta! Let’s bring in the final agent in our AI-powered BDD workflow: the **Scribe Agent**, who generates clear, useful documentation based on the code, tests, and Gherkin specs.
+### Agent
+ Awesome! Let’s bring in the final agent in our AI-powered BDD workflow: the **Scribe Agent**, who generates clear, useful documentation based on the code, tests, and Gherkin specs.
 
 ---
 
@@ -775,11 +788,11 @@ Would you like to:
 - Or maybe brainstorm how to scale this into a full AI-driven dev platform?
 
 Let’s keep the creativity flowing!
-
-
-## User
-
-That looks great! 
+</details>
+<details>
+<summary><b>
+User:</b> 
+ That looks great! 
 Now I want you to help me craft a specification for the agents using this format:
 
 ---
@@ -787,10 +800,10 @@ description: Sufficiently clear and concise description of what the agent will d
 tools: ['codebase', 'fetch', 'findTestFiles', 'githubRepo', 'search', 'usages']
 ---
 # Individual, agent specific instructions
+</summary>
 
-## Agent
-
-Absolutely! Here's the first agent specification in the format you requested. We'll go one by one, starting with the **Visionary Agent**.
+### Agent
+ Absolutely! Here's the first agent specification in the format you requested. We'll go one by one, starting with the **Visionary Agent**.
 
 ---
 
@@ -814,14 +827,15 @@ You do not write technical specifications or implementation details. Your output
 ---
 
 Would you like me to continue with the **Architect Agent** next?
-
-## User
-
+</details>
+<details>
+<summary><b>
+User:</b> 
 Yes
+</summary>
 
-## Agent
-
-Here’s the specification for the **Architect Agent**, following the format you requested:
+### Agent
+ Here’s the specification for the **Architect Agent**, following the format you requested:
 
 ---
 
@@ -845,13 +859,15 @@ You do not write code or tests. Your output should be structured for use by deve
 ---
 
 Would you like me to continue with the **Behavior Agent** next?
+</details>
 
-## User
-
+<details>
+<summary><b>
+User:</b> 
 Yes
+</summary>
 
-## Agent
-
+### Agent
 Here’s the specification for the **Behavior Agent**, following your requested format:
 
 ---
@@ -876,13 +892,15 @@ You do not write implementation code or tests. Your output should be usable by Q
 ---
 
 Would you like me to continue with the **Guardian Agent** next?
+</details>
 
-## User
-
+<details>
+<summary><b>
+User:</b> 
 Yes
+</summary>
 
-## Agent
-
+### Agent
 Here’s the specification for the **Guardian Agent**, continuing in the format you provided:
 
 ---
@@ -907,13 +925,15 @@ You do not write implementation code. Your output should be usable by developers
 ---
 
 Would you like me to continue with the **Builder Agent** next?
+</details>
 
-## User
-
+<details>
+<summary><b>
+User:</b> 
 Yes
+</summary>
 
-## Agent
-
+### Agent
 Here’s the specification for the **Builder Agent**, continuing in your structured format:
 
 ---
@@ -938,13 +958,15 @@ You do not write tests or specifications. Your output should be production-ready
 ---
 
 Would you like me to continue with the **Refiner Agent** next?
+</details>
 
-## User
-
+<details>
+<summary><b>
+User:</b> 
 Yes
+</summary>
 
-## Agent
-
+### Agent
 Here’s the specification for the **Refiner Agent**, continuing in your structured format:
 
 ---
@@ -969,13 +991,15 @@ You do not write new features or tests. Your output should be actionable feedbac
 ---
 
 Would you like me to continue with the **Scribe Agent** next?
+</details>
 
-## User
-
+<details>
+<summary><b>
+User:</b> 
 Yes
+</summary>
 
-## Agent
-
+### Agent
 Here’s the final agent specification for the **Scribe Agent**, completing your multi-agent system:
 
 ---
@@ -1002,14 +1026,16 @@ You do not write code or tests. Your output should be ready for inclusion in pro
 That wraps up the full set of agent specifications! Would you like a bundled version of all of them in a single document, or are you planning to deploy or simulate them individually?
 
 Also, how did this format work for you? Feel free to give it a 👍 or 👎!
+</details>
 
-## User
-
+<details>
+<summary><b>
+User:</b> 
 This is great, thanks! As a final step, can we describe the flow as a markdown diagram?
+</summary>
 
-## Agent
-
-You're very welcome, Kosta! Here's a **Markdown diagram** that visually represents the full AI-powered BDD development workflow with your specialized agents. This uses Mermaid syntax, which is supported in many markdown renderers (like GitHub, Obsidian, and some documentation tools).
+### Agent
+You're very welcome! Here's a **Markdown diagram** that visually represents the full AI-powered BDD development workflow with your specialized agents. This uses Mermaid syntax, which is supported in many markdown renderers (like GitHub, Obsidian, and some documentation tools).
 
 ---
 
@@ -1044,3 +1070,5 @@ This diagram shows the **sequential flow** of responsibility from idea to implem
 Would you like a version of this exported as a code snippet, or embedded into a documentation template? Or maybe a version that includes feedback loops or parallel flows?
 
 Let’s keep refining it if needed!
+</details>
+
