@@ -1,3 +1,6 @@
+---
+mode: agent
+---
 # Guided example for the Idea Coach
 
 <details>
